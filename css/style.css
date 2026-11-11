@@ -1,0 +1,139 @@
+:root {
+  --pink-50:  #fff5f8;
+  --pink-100: #fde6ee;
+  --pink-300: #f6b8cc;
+  --pink-500: #e58aa8;
+  --blue-100: #e4eefb;
+  --blue-300: #b5cdf0;
+  --blue-500: #7ea6dc;
+  --ink:      #4a4558;
+  --ink-soft: #7d7790;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: var(--ink);
+  background: var(--pink-50);
+  line-height: 1.75;
+}
+
+h1, h2, h3, h4, .navbar-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(255, 245, 248, .92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--pink-100);
+}
+.navbar-brand { font-size: 1.6rem; color: var(--pink-500); }
+.nav-link { color: var(--ink-soft); font-weight: 500; }
+.nav-link:hover, .nav-link.active { color: var(--pink-500); }
+
+/* Hero */
+.hero {
+  padding: 7rem 0 4.5rem;
+  background: linear-gradient(135deg, var(--pink-100) 0%, var(--blue-100) 100%);
+}
+.profile-photo {
+  width: 260px; height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0 0 0 4px var(--pink-300), 0 14px 34px rgba(126, 166, 220, .3);
+}
+.hero h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); }
+.hero .role { color: var(--blue-500); font-weight: 600; font-size: 1.1rem; }
+
+.btn-soft {
+  background: var(--pink-500); color: #fff;
+  border-radius: 50rem; padding: .55rem 1.6rem; border: 0; font-weight: 600;
+}
+.btn-soft:hover { background: #d9729a; color: #fff; }
+.btn-outline-soft {
+  border: 2px solid var(--blue-300); color: var(--blue-500);
+  border-radius: 50rem; padding: .5rem 1.6rem; font-weight: 600;
+}
+.btn-outline-soft:hover { background: var(--blue-500); border-color: var(--blue-500); color: #fff; }
+
+/* Section */
+section { padding: 4.5rem 0; }
+section.alt { background: #fff; }
+.section-title { font-size: 2.3rem; text-align: center; margin-bottom: .4rem; }
+.section-line {
+  width: 70px; height: 4px; border-radius: 4px; margin: 0 auto 2.5rem;
+  background: linear-gradient(90deg, var(--pink-300), var(--blue-300));
+}
+
+/* Cards */
+.soft-card {
+  background: #fff;
+  border: 1px solid var(--pink-100);
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 24px rgba(229, 138, 168, .1);
+  padding: 1.75rem;
+  height: 100%;
+}
+section.alt .soft-card { background: var(--pink-50); }
+.soft-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+
+/* Info list */
+.info-list { list-style: none; padding: 0; margin: 0; }
+.info-list li { display: flex; gap: .75rem; padding: .45rem 0; }
+.info-list i { color: var(--pink-500); }
+
+/* Timeline pendidikan */
+.edu-item { border-left: 3px solid var(--blue-300); padding: 0 0 1.1rem 1.1rem; position: relative; }
+.edu-item:last-child { padding-bottom: 0; }
+.edu-item::before {
+  content: ""; position: absolute; left: -8px; top: 6px;
+  width: 13px; height: 13px; border-radius: 50%;
+  background: var(--pink-300); border: 2px solid #fff;
+}
+.edu-item strong { display: block; }
+.edu-item small { color: var(--ink-soft); }
+
+/* Progress */
+.progress { height: 10px; background: var(--blue-100); border-radius: 50rem; }
+.progress-bar { border-radius: 50rem; background: linear-gradient(90deg, var(--pink-300), var(--blue-500)); }
+.skill-label { display: flex; justify-content: space-between; font-weight: 600; font-size: .95rem; margin-bottom: .3rem; }
+.skill-label span:last-child { color: var(--ink-soft); font-weight: 500; }
+
+/* Badges */
+.badge-soft {
+  background: var(--pink-100); color: #c0577f;
+  font-weight: 600; padding: .5em 1em; border-radius: 50rem; margin: 0 .25rem .5rem 0;
+}
+.badge-soft.blue { background: var(--blue-100); color: #4f78b0; }
+
+/* Hobi */
+.hobby-card { text-align: center; padding: 1.75rem 1rem; }
+.hobby-icon {
+  width: 64px; height: 64px; margin: 0 auto 1rem;
+  display: grid; place-items: center; border-radius: 50%;
+  font-size: 1.7rem; color: var(--pink-500); background: var(--pink-100);
+}
+.col:nth-child(even) .hobby-icon { color: var(--blue-500); background: var(--blue-100); }
+.hobby-card h3 { font-size: 1.3rem; margin-bottom: .3rem; }
+.hobby-card p { color: var(--ink-soft); font-size: .92rem; margin: 0; }
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, var(--pink-100), var(--blue-100));
+  padding: 2.5rem 0; text-align: center; color: var(--ink-soft);
+}
+footer a { color: var(--ink-soft); font-size: 1.4rem; margin: 0 .5rem; transition: color .2s; }
+footer a:hover { color: var(--pink-500); }
+
+a:focus-visible, .btn:focus-visible { outline: 3px solid var(--blue-500); outline-offset: 3px; }
+
+@media (max-width: 575.98px) {
+  .profile-photo { width: 200px; height: 200px; }
+  .hero { padding-top: 6rem; }
+  section { padding: 3.5rem 0; }
+}

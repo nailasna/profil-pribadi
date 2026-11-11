@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil Pribadi | Naila Hasna</title>
+  <meta name="description" content="Halaman profil pribadi mahasiswa Sistem Informasi.">
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS buatan sendiri -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#beranda">Naila Hasna</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bio">Bio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bahasa">Bahasa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobi">Hobi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO / FOTO PROFIL -->
+  <header class="hero" id="beranda">
+    <div class="container">
+      <div class="row align-items-center justify-content-center g-5">
+        <div class="col-12 col-md-5 col-lg-4 text-center">
+          <img src="img/foto-profil.jpeg" alt="Foto profil Nama Lengkap Kamu" class="profile-photo"
+               onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 260 260%22%3E%3Crect width=%22260%22 height=%22260%22 fill=%22%23fde6ee%22/%3E%3Ccircle cx=%22130%22 cy=%22100%22 r=%2240%22 fill=%22%23f6b8cc%22/%3E%3Cpath d=%22M45 230c0-48 38-80 85-80s85 32 85 80z%22 fill=%22%23f6b8cc%22/%3E%3C/svg%3E';">
+        </div>
+        <div class="col-12 col-md-7 col-lg-6 text-center text-md-start">
+          <p class="mb-1" style="color:var(--ink-soft)">Halo, saya</p>
+          <h1>Naila Hasna</h1>
+          <p class="role">Mahasiswa Sistem Informasi · Semester 3</p>
+          <p class="mb-4">Welcome to my profile!</p>
+          <a href="#bio" class="btn btn-soft me-2 mb-2">Tentang Saya</a>
+          <a href="#keahlian" class="btn btn-outline-soft mb-2">Lihat keahlian</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BIOGRAFI -->
+  <section id="bio" class="alt">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+      <div class="row g-4">
+        <div class="col-12 col-lg-7">
+          <div class="soft-card">
+            <h3>Biografi</h3>
+            <p>Halo! Saya <strong>Naila Hasna</strong>, mahasiswa Program Studi Sistem Informasi semester 3 di STMIK Antar Bangsa.</p>
+            <p class="mb-0">Saat ini saya sedang belajar membuat website yang responsif dengan HTML, Bootstrap, serta Git &amp; GitHub.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5">
+          <div class="soft-card">
+            <h3>Informasi Singkat</h3>
+            <ul class="info-list mb-0">
+              <li><i class="bi bi-person-heart"></i><span>Naila Hasna</span></li>
+              <li><i class="bi bi-mortarboard"></i><span>Sistem Informasi, Semester 3</span></li>
+              <li><i class="bi bi-geo-alt"></i><span>Brebes, Indonesia</span></li>
+              <li><i class="bi bi-envelope"></i><span>naillahasnaa@gmail.com</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="soft-card">
+            <h3>Latar Belakang Pendidikan</h3>
+            <div class="edu-item">
+              <strong>S1 Sistem Informasi, STMIK Antar Bangsa</strong>
+              <small>2025 – sekarang</small>
+            </div>
+            <div class="edu-item">
+              <strong>MAN 2 Brebes</strong>
+              <small>2022 – 2025</small>
+            </div>
+            <div class="edu-item">
+              <strong>MTsN 4 Brebes</strong>
+              <small>2019 – 2022</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEAHLIAN -->
+  <section id="keahlian">
+    <div class="container">
+      <h2 class="section-title">Keahlian</h2>
+      <div class="section-line"></div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <div class="soft-card">
+            <h3>Keahlian Teknis</h3>
+            <div class="mb-3">
+              <div class="skill-label"><span>Microsoft Word &amp; Excel</span><span>55%</span></div>
+              <div class="progress" role="progressbar" aria-label="HTML5 dan CSS3" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width:55%"></div></div>
+            </div>
+            <div class="mb-3">
+              <div class="skill-label"><span>JavaScript Dasar</span><span>30%</span></div>
+              <div class="progress" role="progressbar" aria-label="Bootstrap" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width:30%"></div></div>
+            </div>
+            <div class="mb-3">
+              <div class="skill-label"><span>Basis Data Dasar (MySQL)</span><span>50%</span></div>
+              <div class="progress" role="progressbar" aria-label="Basis Data MySQL" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width:50%"></div></div>
+            </div>
+            <div class="mb-3">
+              <div class="skill-label"><span>Python Dasar</span><span>65%</span></div>
+              <div class="progress" role="progressbar" aria-label="Git dan GitHub" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width:65%"></div></div>
+            </div>
+            <div>
+              <div class="skill-label"><span>HTML5 &amp; CSS3</span><span>30%</span></div>
+              <div class="progress" role="progressbar" aria-label="JavaScript Dasar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width:30%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="soft-card">
+            <h3>Keahlian Non-Teknis</h3>
+            <span class="badge badge-soft">Komunikasi</span>
+            <span class="badge badge-soft blue">Kerja Tim</span>
+            <span class="badge badge-soft">Manajemen Waktu</span>
+            <span class="badge badge-soft blue">Problem Solving</span>
+            <span class="badge badge-soft">Teliti</span>
+            <span class="badge badge-soft blue">Editing</span>
+            <hr class="my-4" style="border-color:var(--pink-300)">
+            <h3>Tools</h3>
+            <span class="badge badge-soft blue">VS Code</span>
+            <span class="badge badge-soft">Canva</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BAHASA -->
+  <section id="bahasa" class="alt">
+    <div class="container">
+      <h2 class="section-title">Kemampuan Bahasa</h2>
+      <div class="section-line"></div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-md-4">
+          <div class="soft-card text-center">
+            <h3>Bahasa Indonesia</h3>
+            <span class="badge badge-soft mb-3">Bahasa Sehari-hari</span>
+            <div class="progress" role="progressbar" aria-label="Bahasa Indonesia" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width:100%"></div></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="soft-card text-center">
+            <h3>Bahasa Inggris</h3>
+            <span class="badge badge-soft blue mb-3">Basic</span>
+            <div class="progress" role="progressbar" aria-label="Bahasa Inggris" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width:50%"></div></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="soft-card text-center">
+            <h3>Bahasa Sunda</h3>
+            <span class="badge badge-soft mb-3">Aktif</span>
+            <div class="progress" role="progressbar" aria-label="Bahasa Daerah" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width:85%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOBI -->
+  <section id="hobi">
+    <div class="container">
+      <h2 class="section-title">Hobi &amp; Minat</h2>
+      <div class="section-line"></div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="soft-card hobby-card">
+            <div class="hobby-icon"><i class="bi bi-book"></i></div>
+            <h3>Membaca</h3>
+            <p>Novel di waktu senggang/libur.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="soft-card hobby-card">
+            <div class="hobby-icon"><i class="bi bi-music-note-beamed"></i></div>
+            <h3>Musik</h3>
+            <p>Mendengarkan lagu sambil belajar atau ngoding.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="soft-card hobby-card">
+            <div class="hobby-icon"><i class="bi bi-camera"></i></div>
+            <h3>Fotografi</h3>
+            <p>Mengabadikan momen dan suasana yang indah.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="soft-card hobby-card">
+            <div class="hobby-icon"><i class="bi bi-palette"></i></div>
+            <h3>Desain</h3>
+            <p>Membuat desain sederhana dengan Canva.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="mb-2">
+        <a href="https://github.com/usernamekamu" aria-label="GitHub" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+        <a href="https://instagram.com/usernamekamu" aria-label="Instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+        <a href="mailto:emailkamu@gmail.com" aria-label="Email"><i class="bi bi-envelope-heart"></i></a>
+      </div>
+      <p class="mb-0 small">&copy; 2026 Naila Hasna · Sistem Informasi · UTS Pemrograman Berbasis Web</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
